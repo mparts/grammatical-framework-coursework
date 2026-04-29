@@ -108,46 +108,46 @@ lin already_Adv   = mkAdv "ήδη" ;
 lin now_Adv       = mkAdv "τώρα" ;
 
 -- Nouns
-lin animal_N      = mkN "ζώο" ;
-lin apple_N       = mkN "μήλο" ;
-lin baby_N        = mkN "μωρό" ;
-lin beer_N        = mkN "μπύρα" ;
-lin bike_N        = mkN "ποδήλατο" ;
-lin bird_N        = mkN "πουλί" ;
-lin blood_N       = mkN "αίμα" "αίματα" ;
-lin boat_N        = mkN "πλοίο" ;
-lin book_N        = mkN "βιβλίο" ;
-lin boy_N         = mkN "αγόρι" ;
-lin bread_N       = mkN "ψωμί" ;
-lin car_N         = mkN "αυτοκίνητο" ;
-lin cat_N         = mkN "γάτα" ;
-lin child_N       = mkN "παιδί" ;
-lin city_N        = mkN "πόλη" "πόλεις" ;
-lin cloud_N       = mkN "σύννεφο" ;
-lin computer_N    = mkN "υπολογιστής" ;
-lin cow_N         = mkN "αγελάδα" ;
-lin dog_N         = mkN "σκύλος" ;
-lin fire_N        = mkN "φωτιά" ;
-lin fish_N        = mkN "ψάρι" ;
-lin flower_N      = mkN "λουλούδι" ;
-lin friend_N      = mkN "φίλος" ;
-lin girl_N        = mkN "κορίτσι" ;
-lin grammar_N     = mkN "γραμματική" ;
-lin horse_N       = mkN "άλογο" ;
-lin house_N       = mkN "σπίτι" ;
-lin language_N    = mkN "γλώσσα" ;
-lin man_N         = mkN "άνδρας" ;
-lin milk_N        = mkN "γάλα" "γάλατα" ;
-lin music_N       = mkN "μουσική" ;
-lin river_N       = mkN "ποτάμι" ;
-lin sea_N         = mkN "θάλασσα" ;
-lin ship_N        = mkN "πλοίο" ;
-lin star_N        = mkN "αστέρι" ;
-lin train_N       = mkN "τρένο" ;
-lin tree_N        = mkN "δέντρο" ;
-lin water_N       = mkN "νερό" ;
-lin wine_N        = mkN "κρασί" ;
-lin woman_N       = mkN "γυναίκα" ;
+lin animal_N      = mkN "ζώο" Neut ;
+lin apple_N       = mkN "μήλο" Neut ;
+lin baby_N        = mkN "μωρό" Neut ;
+lin beer_N        = mkN "μπύρα" Fem ;
+lin bike_N        = mkN "ποδήλατο" Neut ;
+lin bird_N        = mkN "πουλί" Neut ;
+lin blood_N       = mkN "αίμα" "αίματα" Neut ;
+lin boat_N        = mkN "πλοίο" Neut ;
+lin book_N        = mkN "βιβλίο" Neut ;
+lin boy_N         = mkN "αγόρι" Neut ;
+lin bread_N       = mkN "ψωμί" Neut ;
+lin car_N         = mkN "αυτοκίνητο" Neut ;
+lin cat_N         = mkN "γάτα" Fem ;
+lin child_N       = mkN "παιδί" Neut ;
+lin city_N        = mkN "πόλη" "πόλεις" Fem;
+lin cloud_N       = mkN "σύννεφο" Neut ;
+lin computer_N    = mkN "υπολογιστής" Masc ;
+lin cow_N         = mkN "αγελάδα" Fem ;
+lin dog_N         = mkN "σκύλος" Masc ;
+lin fire_N        = mkN "φωτιά" Fem ;
+lin fish_N        = mkN "ψάρι" Neut ;
+lin flower_N      = mkN "λουλούδι" Neut ;
+lin friend_N      = mkN "φίλος" Masc ;
+lin girl_N        = mkN "κορίτσι" Neut ;
+lin grammar_N     = mkN "γραμματική" Fem ;
+lin horse_N       = mkN "άλογο" Neut ;
+lin house_N       = mkN "σπίτι" Neut ;
+lin language_N    = mkN "γλώσσα" Fem ;
+lin man_N         = mkN "άνδρας" Masc ;
+lin milk_N        = mkN "γάλα" "γάλατα" Neut ;
+lin music_N       = mkN "μουσική" Fem ;
+lin river_N       = mkN "ποτάμι" Neut ;
+lin sea_N         = mkN "θάλασσα" Fem ;
+lin ship_N        = mkN "πλοίο" Fem ;
+lin star_N        = mkN "αστέρι" Neut ;
+lin train_N       = mkN "τρένο" Neut ;
+lin tree_N        = mkN "δέντρο" Neut ;
+lin water_N       = mkN "νερό" Neut ;
+lin wine_N        = mkN "κρασί" Neut ;
+lin woman_N       = mkN "γυναίκα" Fem ;
 
 -- Adjectives
 lin bad_A         = mkA "κακό" ;
@@ -205,9 +205,9 @@ lin wait_V2       = mkV2 "περιμένω" "για" ;
 oper
   -- Nouns
   mkN = overload {
-    mkN : Str -> N = \sg -> lin N (smartNoun sg) ; -- Predictable nouns
-    mkN : Str -> Str -> N = \sg, pl -> lin N (mkNounIrreg sg pl) ; -- Irregular nouns
-    } ;
+    mkN : Str -> Gender -> N = \sg, g -> lin N (smartNoun sg ** {g = g}) ;
+    mkN : Str -> Str -> Gender -> N = \sg, pl, g -> lin N (mkNoun sg pl g) ;
+  } ;
   -- Adjectives
   mkA = overload {
     mkA : Str -> A = \neut -> lin A (smartAdj neut) ; -- Predictable adjectives

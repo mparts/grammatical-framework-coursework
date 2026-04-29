@@ -18,23 +18,14 @@ oper
     g = g
     } ;
 
-  mkNounIrreg : Str -> Str -> Noun = \sg, pl ->
-    mkNoun sg pl (genderOfEnding sg) ;
-
-  genderOfEnding : Str -> Gender = \sg -> case sg of {
-    _ + ("ί" | "ό" | "ο" | "ι")      => Neut ;
-    _ + ("ος" | "ας" | "ης" | "ύς")  => Masc ;
-    _                                 => Fem
-    } ;
-
   -- Smart paradigm: 
   smartNoun : Str -> Noun = \sg -> case sg of {
-    x + "ί"    => mkNoun sg (x + "ιά")   Neut ;
-    x + "ό"    => mkNoun sg (x + "ά")    Neut ;
-    x + "ο"    => mkNoun sg (x + "α")    Neut ;
-    x + "ος"   => mkNoun sg (x + "οι")   Masc ;
-    x + "ας"   => mkNoun sg (x + "ες")   Masc ;
-    x + "ής"   => mkNoun sg (x + "ές")   Masc ;
+    x + "ί"    => mkNoun sg (x + "ιά") Neut ;
+    x + "ό"    => mkNoun sg (x + "ά")  Neut ;
+    x + "ο"    => mkNoun sg (x + "α")  Neut ;
+    x + "ος"   => mkNoun sg (x + "οι") Masc ;
+    x + "ας"   => mkNoun sg (x + "ες") Masc ;
+    x + "ής"   => mkNoun sg (x + "ές") Masc ;
     x + ("ά" | "ή")    => mkNoun sg (x + "ές")   Fem ;
     x + ("α" | "η")  => mkNoun sg (x + "ες")   Fem ;
     _          => mkNoun sg (sg + "α")   Neut
