@@ -19,17 +19,18 @@ oper
     } ;
 
   -- Smart paradigm: 
-  smartNoun : Str -> Noun = \sg -> case sg of {
-    x + "ί"    => mkNoun sg (x + "ιά") Neut ;
-    x + "ό"    => mkNoun sg (x + "ά")  Neut ;
-    x + "ο"    => mkNoun sg (x + "α")  Neut ;
-    x + "ος"   => mkNoun sg (x + "οι") Masc ;
-    x + "ας"   => mkNoun sg (x + "ες") Masc ;
-    x + "ής"   => mkNoun sg (x + "ές") Masc ;
-    x + ("ά" | "ή")    => mkNoun sg (x + "ές")   Fem ;
-    x + ("α" | "η")  => mkNoun sg (x + "ες")   Fem ;
-    _          => mkNoun sg (sg + "α")   Neut
-    } ;
+  smartNoun : Str -> Gender -> Noun = \sg, g ->
+    let plural : Str = case sg of {
+      x + "ί"  => x + "ιά" ;
+      x + "ό"  => x + "ά"  ;
+      x + "ο"  => x + "α"  ;
+      x + "ός" => x + "οί" ;
+      x + "ος" => x + "οι" ;
+      x + ("ας" | "α" | "η") => x + "ες" ;
+      x + ("ής" | "ά" | "ή") => x + "ές" ;
+      _        => sg + "α"
+      }
+    in mkNoun sg plural g ;
 
 
   -------------------------------------------------------

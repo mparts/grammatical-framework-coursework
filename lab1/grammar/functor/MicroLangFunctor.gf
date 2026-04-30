@@ -94,7 +94,7 @@ lin
   dog_N = Lexicon.dog_N ;
   drink_V2 = Lexicon.drink_V2 ;
   eat_V2 = Lexicon.eat_V2 ;
-  find_V2 = Lexicon.find_V2 ;
+  -- find_V2 = Lexicon.find_V2 ;
   fire_N = Lexicon.fire_N ;
   fish_N = Lexicon.fish_N ;
   flower_N = Lexicon.flower_N ;

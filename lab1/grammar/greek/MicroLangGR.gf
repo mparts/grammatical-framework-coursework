@@ -205,8 +205,8 @@ lin wait_V2       = mkV2 "περιμένω" "για" ;
 oper
   -- Nouns
   mkN = overload {
-    mkN : Str -> Gender -> N = \sg, g -> lin N (smartNoun sg ** {g = g}) ;
-    mkN : Str -> Str -> Gender -> N = \sg, pl, g -> lin N (mkNoun sg pl g) ;
+    mkN : Str -> Gender -> N = \sg, g -> lin N (smartNoun sg g) ; -- Predictable nouns
+    mkN : Str -> Str -> Gender -> N = \sg, pl, g -> lin N (mkNoun sg pl g) ; -- Irregular nouns
   } ;
   -- Adjectives
   mkA = overload {
