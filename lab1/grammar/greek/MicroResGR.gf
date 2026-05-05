@@ -98,12 +98,14 @@ oper
 
   -- Regular verbs with predictable variations
   regVerb : Str -> Verb = \p1 -> case p1 of {
-    stem + "αίνω" => mkVerb p1 (stem+"αίνει") (stem + "ε") (stem+"αίνοντας") (stem+"αίνουν") ;
-    stem + "ω"    => mkVerb p1 (stem+"ει") ("έ" + stem + "ε") (stem+"μένο") (stem+"ουν") ;
-    stem + "ομαι" => mkVerb p1 (stem+"εται") (stem + "θηκε") (stem+"μένο") (stem+"ονται") ;
-    stem + "ώ"    => mkVerb p1 (stem+"ά") (stem+"ησε") (stem+"ημένο") (stem+"ούν") ;
-    stem + "άμαι" => mkVerb p1 (stem+"άται") (stem+"ήθηκε") (stem+"ισμένο") (stem+"ούνται") ; 
-    _             => mkVerb p1 (p1+"ει") (p1+"ε") (p1+"μένο") (p1+"ουν")
+    stem + "αίνω" => mkVerb p1 (stem+"αίνει") (stem+"ε")     (stem+"αίνοντας") (stem+"αίνουν") ;
+    stem + "ομαι" => mkVerb p1 (stem+"εται")  (stem+"θηκε")  (stem+"μένο")     (stem+"ονται") ;
+    stem + "άμαι" => mkVerb p1 (stem+"άται")  (stem+"ήθηκε") (stem+"ισμένο")   (stem+"ούνται") ;
+    stem + "ώω"   => mkVerb p1 (stem+"ώει")   (stem + "ε")   (stem+"μένο")     (stem+"ώνε") ; 
+    stem + "άω"   => mkVerb p1 (stem+"άει") ("έ"+stem+"ασε") (stem+"ασμένο")   (stem+"άνε") ; 
+    stem + "ώ"    => mkVerb p1 (stem+"ά")     (stem+"ησε")   (stem+"ημένο")    (stem+"ούν") ; 
+    stem + "ω"    => mkVerb p1 (stem+"ει")    (stem + "ε")   (stem+"μένο")     (stem+"ουν") ;
+    _             => mkVerb p1 (p1+"ει")      (p1+"ε")       (p1+"μένο")       (p1+"ουν")
     } ;
 
   -- normal irregular verbs

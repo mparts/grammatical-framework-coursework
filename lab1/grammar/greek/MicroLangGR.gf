@@ -173,19 +173,19 @@ lin yellow_A      = mkA "κίτρινο" ;
 lin young_A       = mkA "νέος" "νέα" "νέο" ;
 
 -- Intransitive verbs
-lin come_V        = mkV "έρχομαι" "ήρθε" "έρχόμενο" ;
+lin come_V        = mkV "έρχομαι" "ήρθε" "ερχόμενο" ;
 lin go_V          = mkV "πηγαίνω";
-lin jump_V        = mkV "πηδώ" ;
+lin jump_V        = mkV "πηδώ" "πήδηξε" "πηδηγμένο" ;
 lin live_V        = mkV "ζω" "έζησε" "ζώντας" ;
-lin play_V        = mkV "παίζω" ;
-lin run_V         = mkV "τρέχω" ;
+lin play_V        = mkV "παίζω" "έπαιξε" "παίζοντας" ;
+lin run_V         = mkV "τρέχω" "έτρεξε" "τρέχοντας" ;
 lin sleep_V       = mkV "κοιμάμαι" ;
 lin swim_V        = mkV "κολυμπώ" "κολύμπησε" "κολυμπημένο" ;
-lin travel_V      = mkV "ταξιδεύω" ;
+lin travel_V      = mkV "ταξιδεύω" "ταξίδεψε" "ταξιδευμένο" ;
 lin walk_V        = mkV "περπατώ" ;
 
 -- Transitive verbs
-lin break_V2      = mkV2 (mkV "σπάω" "έσπασε" "σπασμένο") ;
+lin break_V2      = mkV2 (mkV "σπάω") ;
 lin buy_V2        = mkV2 (mkV "αγοράζω" "αγόρασε" "αγορασμένο") ;
 lin drink_V2      = mkV2 (mkV "πίνω" "ήπιε" "πιωμένο") ;
 lin eat_V2        = mkV2 (mkV "τρώω" "έφαγε" "φαγωμένο") ;
