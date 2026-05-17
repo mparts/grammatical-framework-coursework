@@ -25,7 +25,7 @@ lin
   -- and I do not know what else to do.. I spent quite some time in this, both with Aarne in the lab
   -- and on my own. Bellow is what commands I tried, most of them get a linearization error, and some 
   -- get a runtime error, prompting me to the issues tab of the repository. 
-  -- currently generation always uses "ο" before the names instead of "η" when it is feminine.. "αυτός" & "αυτή" seem to be working though..
+  -- currently generation always uses "ο" before the names instead of "η" when it is feminine.. "αυτός" & "αυτή" (he/she) seem to be working fine..
 
   -- FemaleName s = mkNP (<mkPN s.s ** {g=feminine}: PN>) ;
   -- MaleName s = mkNP (<mkPN s.s ** {g=masculine}: PN>) ;
@@ -41,7 +41,7 @@ lin
   MaleName s = symb s ; -- use if your language needs gender agreement
   StringName s = symb s ;
 
-  YearDate i = inAdv <symb i : NP> ;
+  YearDate i = ParadigmsGre.mkAdv ("το " ++ i.s) ;
 
   he_Name = he_NP ;
   she_Name = she_NP ;
