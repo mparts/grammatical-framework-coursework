@@ -21,11 +21,13 @@ lin
     mkS pastTense (mkCl name (mkVP (mkVP die_VP) date)) ;
 
   ------------------------------------------------------------------------------------------------------ 
-  -- I purposely left the following commented out code, because currently genders don't work perfectly, 
+  -- I purposely left the following commented-out code in here, because currently genders don't work perfectly, 
   -- and I do not know what else to do.. I spent quite some time in this, both with Aarne in the lab
   -- and on my own. Bellow is what commands I tried, most of them get a linearization error, and some 
   -- get a runtime error, prompting me to the issues tab of the repository. 
   -- currently generation always uses "ο" before the names instead of "η" when it is feminine.. "αυτός" & "αυτή" (he/she) seem to be working fine..
+  -- I know that my understanding of GF is far from perfect, so I most probably am doing something wrong, but I have no idea what..
+  -- please in case it is simple, let me know, I will be happy to fix it and learn from it! 
 
   -- FemaleName s = mkNP (<mkPN s.s ** {g=feminine}: PN>) ;
   -- MaleName s = mkNP (<mkPN s.s ** {g=masculine}: PN>) ;
