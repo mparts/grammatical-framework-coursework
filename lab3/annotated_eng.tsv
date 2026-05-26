@@ -1,0 +1,363 @@
+ID	FORM	UPOS	HEAD	DERPEL
+
+1	Who	PRON	4	compound
+2	are	AUX	4	aux
+3	they	PRON	4	nsubj
+4	?	PUNCT	0	root
+
+1	A	DET	3	case
+2	small	ADJ	3	amod
+3	town	NOUN	0	root
+4	with	ADP	3	case
+5	two	NUM	6	nummod
+6	minarets	NOUN	3	nmod
+7	glides	VERB	3	acl
+8	by	ADV	7	advmod
+9	.	PUNCT	3	punct
+
+1	I	PRON	0	root
+2	was	AUX	1	copula
+3	just	ADV	2	advmod
+4	a	DET	5	det
+5	boy	NOUN	1	nsubj
+6	with	ADP	5	case
+7	muddy	ADJ	8	amod
+8	shoes	NOUN	5	nmod
+9	.	PUNCT	5	punct
+
+1	Shenzhen	PROPN	0	root
+2	's	PART	1	case
+3	traffic	NOUN	8	nmod
+4	police	NOUN	8	nmod
+5	have	AUX	8	aux
+6	opted	VERB	8	acl
+7	for	ADP	6	case
+8	unconventional	ADJ	9	amod
+9	penalties	NOUN	8	nmod
+10	before	ADV	9	advmod
+11	.	PUNCT	9	punct
+12	.	PUNCT	9	punct
+
+1	The	DET	0	root
+2	study	NOUN	0	root
+3	of	ADP	2	case
+4	volcanoes	NOUN	2	nmod
+5	is	AUX	2	copula
+6	called	VERB	2	acl
+7	volcanology	NOUN	6	dobj
+8	,	PUNCT	7	punct
+9	sometimes	ADV	7	advmod
+10	spelled	VERB	7	acl
+11	vulcanology	NOUN	10	dobj
+12	.	PUNCT	7	punct
+
+1	It	PRON	0	root
+2	was	AUX	1	copula
+3	conducted	VERB	1	acl
+4	just	ADV	3	advmod
+5	off	ADP	3	case
+6	the	DET	8	det
+7	Mexican	ADJ	8	amod
+8	coast	NOUN	3	nmod
+9	from	ADP	8	case
+10	April	PROPN	8	nmod
+11	to	ADP	8	case
+12	June	PROPN	8	nmod
+13	.	PUNCT	8	punct
+
+1	"	PUNCT	0	root
+2	Her	PRON	3	nmod:poss
+3	voice:	NOUN	1	nsubj
+4	literally	ADV	3	advmod
+5	went	VERB	3	copula
+6	around	ADP	5	advmod
+7	the	DET	9	det	
+8	world	NOUN	5	nmod
+9	,	PUNCT	5	punct
+10	"	PUNCT	1	punct
+11	Leive	PROPN	3	appos
+12	said	VERB	3	acl
+13	.	PUNCT	3	punct
+
+1	A	DET	3	det
+2	witness	NOUN	3	nsubj
+3	told	VERB	0	root
+4	police	NOUN	3	iobj
+5	that	SCONJ	3	ccomp
+6	the	DET	7	det
+7	victim	NOUN	5	nsubj
+8	had	AUX	7	copula
+9	attacked	VERB	7	acl
+10	the	DET	11	det
+11	suspect	NOUN	9	dobj
+12	in	ADP	9	case
+13	April	PROPN	12	nmod
+14	.	PUNCT	9	punct
+
+1	It	PRON	0	root
+2	's	AUX	1	copula
+3	most	ADV	2	advmod
+4	obvious	ADJ	2	amod
+5	when	SCONJ	2	ccomp
+6	a	DET	7	det
+7	celebrity	NOUN	5	nsubj
+8	's	PART	7	case
+9	name	NOUN	7	nmod
+10	is	AUX	9	copula
+11	initially	ADV	9	advmod
+12	quite	ADV	13	advmod
+13	rare	ADJ	9	amod
+14	.	PUNCT	9	punct
+
+1	This	PRON	0	root
+2	has	AUX	1	copula
+3	not	PART	2	neg
+4	stopped	VERB	1	acl
+5	investors	NOUN	4	nsubj
+6	flocking	VERB	4	xcomp
+7	to	PART	6	mark
+8	puPART	7	csubj
+9	their	PRON	10	det
+10	money	NOUN	8	dobj
+11	in	ADP	8	case
+12	the	DET	13	det
+13	funds	NOUN	11	nmod
+14	.	PUNCT	13	punct
+
+1	This	DET	0	root
+2	discordance	NOUN	0	root
+3	between	ADP	2	case
+4	economic	ADJ	5	amod
+5	data	NOUN	2	nmod
+6	and	CCONJ	2	cc
+7	political	ADJ	8	amod
+8	rhetoric	NOUN	2	nmod
+9	is	AUX	2	copula
+10	familiar	ADJ	2	amod
+11	,	PUNCT	2	punct
+12	or	CCONJ	2	cc
+13	should	AUX	14	aux
+14	be	AUX	13	copula
+15	.	PUNCT	14	punct
+
+1	The	DET	0	root
+2	feasibility	NOUN	0	root
+3	study	NOUN	0	root
+4	estimates	VERB	0	root
+5	that	SCONJ	4	ccomp
+6	it	PRON	5	nsubj
+7	would	AUX	5	aux
+8	take	VERB	5	xcomp
+9	passengers	NOUN	8	nsubj
+10	about	ADV	11	advmod
+11	four	NUM	12	nummod
+12	minutes	NOUN	9	dobj
+13	to	PART	14	mark
+14	cross	VERB	13	ccomp
+15	the	DET	16	det
+16	Potomac	PROPN	15	nmod
+17	River	PROPN	16	nmod
+18	on	ADP	15	case
+19	the	DET	20	det
+20	gondola	NOUN	15	nmod
+21	.	PUNCT	20	punct
+
+1	hPART	0	root
+2	collected	VERB	1	acl
+3	cards	NOUN	2	dobj
+4	and	CCONJ	2	cc
+5	traded	VERB	2	conj
+6	them	PRON	5	dobj
+7	with	ADP	5	case
+8	the	DET	9	det
+9	other	ADJ	10	amod
+10	boys	NOUN	8	nmod
+
+1	this	DET	0	root
+2	crime	NOUN	0	root
+3	carries	VERB	2	acl
+4	a	DET	5	det
+5	penalty	NOUN	3	dobj
+6	of	ADP	5	case
+7	five	NUM	8	nummod
+8	years	NOUN	5	nmod
+9	in	ADP	8	case
+10	prison	NOUN	8	nmod
+
+1	the	DET	0	root
+2	news	NOUN	0	root
+3	was	AUX	2	copula
+4	carried	VERB	2	acl
+5	to	ADP	4	case
+6	every	DET	7	det
+7	village	NOUN	4	nmod
+8	in	ADP	7	case
+9	the	DET	10	det
+10	province	NOUN	7	nmod
+
+1	I	PRON	0
+2	carry	VERB	1	acl
+3	these	DET	4	det
+4	thoughts	NOUN	2	dobj
+5	in	ADP	2	case
+6	the	DET	7	det
+7	back	NOUN	2	nmod
+8	of	ADP	7	case
+9	my	PRON	10	det
+10	head	NOUN	7	nmod
+
+1	Adam	PROPN	0
+2	would	AUX	1	aux
+3	have	AUX	2	aux
+4	been	AUX	3	copula
+5	carried	VERB	1	acl
+6	over	ADP	5	advmod
+7	into	ADP	5	case
+8	the	DET	9	det
+9	life	NOUN	5	nmod
+10	eternal	ADJ	9	amod
+
+1	the	DET	0
+2	casings	NOUN	0
+3	had	AUX	2	copula
+4	rotted	VERB	2	acl
+5	away	ADV	4	advmod
+6	and	CCONJ	4	cc
+7	had	AUX	8	aux
+8	to	PART	7	mark
+9	be	VERB	7	xcomp
+10	replaced	VERB	8	ccomp
+
+1	she	PRON	0
+2	was	AUX	1	copula
+3	incensed	VERB	1	acl
+4	that	SCONJ	1	ccomp
+5	this	DET	6	det
+6	chit	NOUN	4	nsubj
+7	of	ADP	6	case
+8	a	DET	9	det
+9	girl
+10	should
+11	dare
+12	to
+13	make
+14	a
+15	fool
+16	of
+17	her
+18	in
+19	front
+20	of
+21	the
+PARTss
+
+1	the
+2	landslide
+3	he
+4	had
+5	in
+6	the
+7	electoral
+8	college
+9	obscured
+10	the
+11	narrowness
+12	of
+13	a
+14	victory
+15	based
+16	on
+17	just
+18	43%
+19	of
+20	the
+21	popular
+22	vote
+
+1	United
+2	States
+3	troops
+4	now
+5	carry
+6	atropine
+7	and
+8	autoinjectors
+9	in
+10	their
+11	first-aid
+12	kits
+13	to
+14	use
+15	in
+16	case
+17	of
+18	organophosphate
+19	nerve
+20	agent
+21	poisoning
+
+1	he
+2	may
+3	accomplish
+4	by
+5	craft
+6	in
+7	the
+8	long
+9	run
+10	what
+11	he
+12	cannot
+13	do
+14	by
+15	force
+16	and
+17	violence
+18	in
+19	the
+20	short
+21	one
+
+1	it
+2	has
+3	been
+4	said
+5	that
+6	only
+7	a
+8	hierarchical
+9	society
+10	with
+11	a
+12	leisure
+13	class
+14	at
+15	the
+16	top
+17	can
+18	produce
+19	works
+20	of
+21	art
+
+1	his
+2	ingenuous
+3	explanation
+4	that
+5	he
+6	would
+7	not
+8	have
+9	burned
+10	the
+11	church
+12	if
+13	he
+14	had
+15	not
+16	thought
+17	the
+18	bishop
+19	was
+20	in
+21	it
