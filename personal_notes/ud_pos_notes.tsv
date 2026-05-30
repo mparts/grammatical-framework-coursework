@@ -1,0 +1,19 @@
+CATEGORY	 DESCRIPTION                   	 EXAMPLE                         	 CANDIDATES
+
+NOUN    	 person, place, thing          	 cat, London, love               	 nmod, obl, nsubj, obj, compound, appos, conj, root
+PROPN   	 named NOUN                    	 Einstein, London, Monday        	 nsubj, obj, nmod, obl, conj, appos, root
+PRON    	 substitutes for NOUN          	 I, myself, mine, who, what      	 nsubj, obj, obl, nmod, expl, root
+VERB    	 action, state, event          	 like, think, go                 	 root, conj, advcl, acl, xcomp, ccomp, parataxis
+AUX     	 helps main VERB               	 has, is, will, was, should, must	 aux, cop, root
+ADJ     	 modifies NOUN or PRON         	 big, blue, happy                	 amod, root, conj, xcomp, acl
+ADV     	 modifies VERB or ADJ or ADV   	 slowly, yesterday, there        	 advmod, obl, conj
+ADP     	 prepositions                  	 after, on, with, during         	 case, mark
+DET     	 determiner for NOUN           	 an, the, this, which            	 det
+NUM     	 numbers                       	 1, one, K (thousand), IV        	 nummod, conj
+PART    	 word that attach to other word	 's, not                         	 mark, advmod, case
+SCONJ   	 introduces subordinate clause 	 Because, since, unless, if, that	 mark
+CCONJ   	 joins equal units             	 and, but, or, yet               	 cc
+INTJ    	 exclamation                   	 psst, ouch, bravo, hello        	 discource, root
+SYM     	 symbols                       	 $, %, +, emojis                 	 dep, nmod
+PUNCT   	 punctuation                   	 . , ! ? “ ”                     	 punct
+X       	 uninteliggible, foreing       	 sdjkfsbdv                       	 dep

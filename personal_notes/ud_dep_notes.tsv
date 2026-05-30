@@ -1,0 +1,38 @@
+CATEGORY         	 DESCRIPTION                              	 EXAMPLE
+
+# NOUN PROPN PRON
+nsubj            	 subject of VERB (doer/experiencer)       	 NOUN, PRON, sometimes PROPN
+obj              	 entity VERB acts upon                    	 What?, Whom?
+iobj             	 indirect object; recipient/beneficiary   	 To what?, For whom?, For what?
+obl              	 usually prep phrase, modifying a VERB    	 off the COAST, from APRIL to JUNE
+nmod               	 nominal modifying other nominal          	 cup of tea, proffessor Andrew, summer house
+nummod           	 numeric modifier of NOUN                 	 3 sheep, forty dollars, $ 40
+compound         	 2 words as 1                             	 apple juice, ice cream flavors, put up
+conj             	 relation of two elements connected by cc 	 tall and handsome, tea but not coffee
+appos            	 noun phrase renaming another noun        	 my friend, John
+
+# VERB AUX
+aux              	 auxiliary verb                           	 has died, was killed, will have left
+cop              	 linkes subject to predicate              	 IF AUX replaced by "is" makes sense, then is COPULA
+xcomp            	 open clausal complement, external subject	 started to work, expect them to change
+ccomp            	 clausal complement, own subject          	 he SAYS that you LIKE him.
+advcl            	 clause modifying VERB/ADJ                	 he was UPSET when I TALKED to him.
+acl              	 clause modifying a noun                  	 the book that I read
+parataxis        	 loosely connected clauses                	 He left, I stayed.
+
+# ADJ
+amod             	 adjective modifying NOUN                 	 large, hot, big
+xcomp            	 clausal complement of adj                	 eager to leave
+
+# ADV
+advmod           	 adverb modifying VERB, ADJ, ADV          	 genetically modified, about 200, WHEN i was BORN
+
+# THE REST
+case             	 marks nouns                              	 after, on, towards, with, during
+mark             	 marks clauses                            	 Because, although, if
+cc               	 join equal importance sentences          	 For, And, Nor, But, Or, Yet, So
+conj             	 relation of two elements connected by cc 	 tall and handsome, tea but not coffee
+det              	 Determiner of NOUN                       	 the, this
+expl             	 expletive / dummy subject                	 there is, it is, it seems
+punct            	 Punctuation                              	 .,!?“”()
+discourse        	 discourse element / interjection         	 well, oh, yes, no
